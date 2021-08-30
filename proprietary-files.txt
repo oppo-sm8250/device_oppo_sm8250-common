@@ -36,7 +36,6 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # ADSP Modules
 odm/lib/rfsa/adsp/capi_v2_dap_cpdp.so
-odm/lib/rfsa/adsp/libSuperSensor_skel.so
 odm/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so
 odm/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
 odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so
@@ -170,27 +169,16 @@ vendor/lib/vendor.qti.hardware.fm@1.0.so
 odm/bin/hw/vendor.oplus.hardware.extcamera@1.0-service
 odm/bin/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-service
 odm/bin/vl53l1_daemon_main
-odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/FusionBin.dat
 odm/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode
 odm/etc/camera/anc_cl_kernel.cache
 odm/etc/camera/asd/class.dlc
 odm/etc/camera/asd/detect.dlc
 odm/etc/camera/ashdr/ncf_pack.ncf
-odm/etc/camera/camera_engmode.xml
 odm/etc/camera/config/camera_unit_config
-odm/etc/camera/config/imx586
 odm/etc/camera/config/imx616
-odm/etc/camera/config/imx689
-odm/etc/camera/config/oppo_camera_algo_switch_config
-odm/etc/camera/config/oppo_camera_aps_config
-odm/etc/camera/config/oppo_camera_config
-odm/etc/camera/config/s5k3m5
 odm/etc/camera/config/video_beauty_default_config
-odm/etc/camera/darksight/darksight_main.bin
-odm/etc/camera/darksight/darksight_ultrawide.bin
 odm/etc/camera/distortionParams.bin
-odm/etc/camera/eis_camera.vcfg
 odm/etc/camera/fb_default
 odm/etc/camera/fb_model/000.png
 odm/etc/camera/fb_model/000_pre.bin
@@ -308,18 +296,12 @@ odm/etc/camera/filters_lut/sky-blue.cube.rgb.bin
 odm/etc/camera/filters_lut/tree-green.cube.rgb.bin
 odm/etc/camera/filters_lut/yuanqi-2.2s.cube.rgb.bin
 odm/etc/camera/gasryuv_1.2_wp.model
-odm/etc/camera/megvii/cache
 odm/etc/camera/megvii/merged_model
 odm/etc/camera/megvii/merged_model_post
-odm/etc/camera/megvii/siq_ocl_cache
-odm/etc/camera/megvii/superiq_model
 odm/etc/camera/megvii/video_retention_model
 odm/etc/camera/megvii/video_retention_model_post
 odm/etc/camera/megvii/videolut_background.png
 odm/etc/camera/megvii/videolut_portrait.png
-odm/etc/camera/megvii32/cache
-odm/etc/camera/megvii32/siq_ocl_cache
-odm/etc/camera/megvii32/superiq_model
 odm/etc/camera/model/DocDetectV15.xbin
 odm/etc/camera/model_fdc.data
 odm/etc/camera/mtStereoParams.bin
@@ -377,23 +359,12 @@ odm/lib64/camera/components/com.oplus.node.videonight.so
 odm/lib64/camera/components/com.qti.node.remosaic.so
 odm/lib64/camera/com.qti.sensor.imx586.so
 odm/lib64/camera/com.qti.sensor.imx616.so
-odm/lib64/camera/com.qti.sensor.imx689.so
 odm/lib64/camera/com.qti.sensor.s5k3m5.so
 odm/lib64/camera/com.qti.sensormodule.qtech_imx616.bin
-odm/lib64/camera/com.qti.sensormodule.semco_imx586.bin
-odm/lib64/camera/com.qti.sensormodule.semco_imx689.bin
-odm/lib64/camera/com.qti.sensormodule.semco_s5k3m5.bin
 odm/lib64/camera/com.qti.tuned.sm8250_qtech_imx616.bin
-odm/lib64/camera/com.qti.tuned.sm8250_semco_imx586.bin
-odm/lib64/camera/com.qti.tuned.sm8250_semco_imx689.bin
-odm/lib64/camera/com.qti.tuned.sm8250_semco_s5k3m5.bin
 odm/lib64/hw/vendor.oplus.hardware.engcamera@1.0-impl.so
 odm/lib64/libarcsoft_beautyshot.so
 odm/lib64/libarcsoft_distortion_correction.so
-odm/lib64/libarcsoft_dualcam_bokeh_api.so
-odm/lib64/libarcsoft_dualcam_refocus_left.so
-odm/lib64/libarcsoft_dualcam_refocus_preview.so
-odm/lib64/libarcsoft_dualcam_refocus_uw.so
 odm/lib64/libarcsoft_hdr_couple_api.so
 odm/lib64/libarcsoft_hdr_denoise_api.so
 odm/lib64/libarcsoft_hdrplus_hvx_stub.so
@@ -416,8 +387,6 @@ odm/lib64/libextcamera_client.so
 odm/lib64/libhwconfigurationutil.so
 odm/lib64/libjrtplib.so
 odm/lib64/libjthread.so
-odm/lib64/libmegface.so
-odm/lib64/libmegvii_superiq.so
 odm/lib64/libml_util.so
 odm/lib64/libmpbase.so
 odm/lib64/libOGLManager.so
@@ -435,9 +404,6 @@ odm/lib64/libSonyIMX471RmscLibrary.so
 odm/lib64/libsnpeml.so
 odm/lib64/libsymphony-cpu.so
 odm/lib64/libsymphonypower.so
-odm/lib64/libtriplecam_image_optical_zoom.so
-odm/lib64/libtriplecam_optical_zoom_control.so
-odm/lib64/libtriplecam_video_optical_zoom.so
 odm/lib64/libVDBayerHDR.so
 odm/lib64/libVDBlurless.so
 odm/lib64/libVDDualCameraBlurlessAPI.so
@@ -545,7 +511,6 @@ vendor/lib/vendor.oplus.hardware.extcamera@1.0.so
 vendor/lib/vendor.oplus.hardware.orms@1.0.so
 
 # Camera Firmware
-odm/vendor/firmware/ois_sem1215s_19066_dvt.bin
 vendor/firmware/CAMERA_ICP.elf
 
 # CDSP
@@ -1368,7 +1333,6 @@ odm/etc/init/vendor.qti.secure_element@1.2-service.rc
 odm/lib64/android.hardware.secure_element@1.0-impl.so
 
 # Sensors
-odm/etc/sensor/sensor_config.json
 odm/lib64/sensors.hal.tof.so
 odm/lib64/sensors.hal.tofcalib.so
 vendor/bin/sensors.qti

@@ -24,12 +24,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Inherit proprietary libraries
-$(call inherit-product, vendor/oppo/OP4A79/OP4A79-vendor.mk)
+$(call inherit-product, vendor/oppo/sm8250-common/sm8250-common-vendor.mk)
 
 # Properties
-TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -213,8 +213,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.oppo_OP4A79 \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.oppo_OP4A79
+    android.hardware.biometrics.fingerprint@2.1-service.oppo_sm8250 \
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.oppo_sm8250
 
 PRODUCT_PACKAGES += \
     IFAAService \
@@ -274,11 +274,11 @@ PRODUCT_COPY_FILES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.oppo_OP4A79
+    android.hardware.light@2.0-service.oppo_sm8250
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.oppo_OP4A79
+    vendor.lineage.livedisplay@2.1-service.oppo_sm8250
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -324,7 +324,7 @@ PRODUCT_PACKAGES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/oppo/OP4A79
+    device/oppo/sm8250-common
 
 # Native Public Libraries
 PRODUCT_COPY_FILES += \
@@ -433,7 +433,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.oppo_OP4A79
+    vendor.lineage.touch@1.0-service.oppo_sm8250
 
 # USB
 PRODUCT_PACKAGES += \
@@ -452,7 +452,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.oppo_OP4A79
+    vendor.qti.hardware.vibrator.service.oppo_sm8250
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml

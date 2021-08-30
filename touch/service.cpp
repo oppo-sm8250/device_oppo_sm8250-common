@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "vendor.lineage.touch@1.0-service.OP4A79"
+#define LOG_TAG "vendor.lineage.touch@1.0-service.oppo_sm8250"
 
 #include <android-base/logging.h>
 #include <binder/ProcessState.h>

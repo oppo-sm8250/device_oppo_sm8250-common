@@ -17,7 +17,7 @@
 
 set -e
 
-DEVICE=OP4A79
+DEVICE_COMMON=sm8250-common
 VENDOR=oppo
 
 # Load extract_utils and do some sanity checks
@@ -67,10 +67,17 @@ function blob_fixup() {
     esac
 }
 
-# Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
+# Initialize the common helper
+setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
+
+if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
+    # Reinitialize the helper for device
+    setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
+    extract "${MY_DIR}/../${DEVICE}/proprietary-files.txt" "${SRC}" \
+        "${KANG}" --section "${SECTION}"
+fi
 
 "${MY_DIR}/setup-makefiles.sh"
